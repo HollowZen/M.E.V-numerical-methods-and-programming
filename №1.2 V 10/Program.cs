@@ -14,20 +14,22 @@ namespace _1._2_V_10
             a = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите конец отрезка");
             b = double.Parse(Console.ReadLine());
-            while (b-a > 2 * e) {
+            while (b - a > 2 * e)
+            {
                 c = (a + b) / 2;
                 if (F(a) * F(c) > 0)
                 {
                     a = c;
                 }
-                else {
+                else
+                {
                     b = c;
                 }
             }
-            Console.WriteLine("ЗНАЧЕНИЕ КОРНЯ С ТОЧНОСТЬЮ {0} РАВНО {1}" ,e, (a + b) / 2);
+            Console.WriteLine("ЗНАЧЕНИЕ КОРНЯ С ТОЧНОСТЬЮ {0} РАВНО {1}", e, (a + b) / 2);
             Console.ReadKey();
         }
 
-    
+
     }
 }
