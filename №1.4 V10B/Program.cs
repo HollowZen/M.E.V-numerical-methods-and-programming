@@ -20,13 +20,7 @@ namespace _1._4_V10B
             Console.WriteLine("Введите конец отрезка");
             b = double.Parse(Console.ReadLine());
 
-            if (F(a) * F(b) >= 0)
-            {
-                Console.WriteLine("Значение корня функции с точностью {0} равно {1}", e, F(a));
-                Console.ReadKey();
-                return;
-            }
-            m = Math.Min(F1(a), F1(b));
+            m = Math.Min(Math.Abs(F1(a)), Math.Abs(F1(b)));
             Console.WriteLine("Параметр m равен {0}", m);
             if (F(a) * F2(a) > 0)
             {

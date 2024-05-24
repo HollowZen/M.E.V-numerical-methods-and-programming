@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _5._3_V10
 {
@@ -15,7 +11,7 @@ namespace _5._3_V10
 
         static double SimpsonIntegral(double a, double b, int n)
         {
-            double h = (b - a) / n; 
+            double h = (b - a) / n;
             double sum = F(a, a) + F(b, a);
 
             for (int i = 1; i < n; i += 2)
@@ -34,17 +30,17 @@ namespace _5._3_V10
 
         static void Main(string[] args)
         {
-            
+
             double a, b, x, h, s;
             int i, n;
-            
+
             Console.WriteLine("Введите начало промежутка");
             a = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите конец промежутка");
             b = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите N");
             n = int.Parse(Console.ReadLine());
-            Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(SimpsonIntegral(a,b,n),5));
+            Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(SimpsonIntegral(a, b, n), 5));
             Console.ReadKey();
 
 

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace __5._4_V10
 {
     internal class Program
     {
         const double e = Math.E;
-        public static double F(double x) => Math.Sqrt(x)/(x+1);
+        public static double F(double x) => Math.Sqrt(x) / (x + 1);
 
 
 

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _5._3_V10_2
 {
     internal class Program
     {
-        public static double F(double x, double a) => 1/(Math.Sqrt(Math.Pow(x,2)+a));
+        public static double F(double x, double a) => 1 / (Math.Sqrt(Math.Pow(x, 2) + a));
 
         static double SimpsonIntegral(double a, double b, int n)
         {
@@ -40,7 +36,7 @@ namespace _5._3_V10_2
             Console.WriteLine("Введите начало промежутка");
             a = double.Parse(Console.ReadLine());
             b = double.PositiveInfinity;
-            Console.WriteLine("Rонец промежутка {0}",b);
+            Console.WriteLine("Rонец промежутка {0}", b);
             Console.WriteLine("Введите N");
             n = int.Parse(Console.ReadLine());
             Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(SimpsonIntegral(a, b, n), 5));
