@@ -32,7 +32,7 @@ namespace __5._4_V10
                 s = s + F(x) * h;
 
             }
-            Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(s, 5));
+            Console.WriteLine($"ЗНАЧЕНИЕ ИНТЕГРАЛА {s}");
             Console.ReadKey();
 
 

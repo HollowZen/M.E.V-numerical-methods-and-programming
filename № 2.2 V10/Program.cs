@@ -47,15 +47,7 @@ namespace __2._2_V10
             for (int i = 0; i < x.Length; i++)
             {
                 Console.WriteLine("Система имеет следующие корни");
-                Console.WriteLine("x1 = {0:0.##}", x[i]);
-                i++;
-                Console.WriteLine("x2 = {0:0.##}", x[i]);
-                i++;
-                Console.WriteLine("x3 = {0:0.##}", x[i]);
-                i++;
-                Console.WriteLine("x4 = {0:0.##}", x[i]);
-                i++;
-
+                Console.WriteLine($"x{i} = {x[i]}");
             }
             Console.ReadKey();
         }

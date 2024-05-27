@@ -4,18 +4,30 @@ namespace _1._3_V_10
 {
     internal class Program
     {
+        static double F(double x) => 5 * x - 8 * Math.Log(x) - 8;
+        static double g(double x) => (8 * Math.Log(x) + 8) / 5; // x = (8*lnx + 8)/5
+
+        static double IterationMethod(double a, double e)
+        {
+            double x0 = a;
+            double x1 = g(x0);
+
+            while (Math.Abs(x1 - x0) > e && x1 > 0)
+            {
+                Console.WriteLine(x0);
+                x0 = x1;
+                x1 = g(x0);
+            }
+            return x1;
+        }
+
         static void Main(string[] args)
         {
-            double F(double x) => ((-8 * Math.Log(x)) - 8) / -5;
-
-            double x1 = 1, x2 = F(x1);
+            double a = 2;   // начальная точка, a>0 
             double e = 0.001;
-            while (Math.Abs(x2 - x1) > e)
-            {
-                x1 = x2;
-                x2 = F(x1);
-            };
-            Console.WriteLine("Ответ: X = {0} ", Math.Round(x1, 3));
+
+            double x = IterationMethod(a, e);
+            Console.WriteLine($"Ответ: X = {x}");
             Console.ReadKey();
         }
     }

@@ -7,8 +7,6 @@ namespace _5._3_V10
         const double e = Math.E;
         public static double F(double x, double a) => Math.Pow(e, a * x);
 
-
-
         static double SimpsonIntegral(double a, double b, int n)
         {
             double h = (b - a) / n;
@@ -27,7 +25,6 @@ namespace _5._3_V10
             return sum * h / 3;
         }
 
-
         static void Main(string[] args)
         {
 
@@ -40,9 +37,8 @@ namespace _5._3_V10
             b = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите N");
             n = int.Parse(Console.ReadLine());
-            Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(SimpsonIntegral(a, b, n), 5));
+            Console.WriteLine($"ЗНАЧЕНИЕ ИНТЕГРАЛА {SimpsonIntegral(a, b, n)}");
             Console.ReadKey();
-
 
         }
     }

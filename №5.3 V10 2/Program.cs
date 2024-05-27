@@ -30,16 +30,14 @@ namespace _5._3_V10_2
 
             double a, b, x, h, s;
             int i, n;
-            ///
-            ////////Переспросить
-            ///
+
             Console.WriteLine("Введите начало промежутка");
             a = double.Parse(Console.ReadLine());
-            b = double.PositiveInfinity;
-            Console.WriteLine("Rонец промежутка {0}", b);
+            Console.WriteLine("Введите конец промежутка");
+            b = double.Parse(Console.ReadLine());
             Console.WriteLine("Введите N");
             n = int.Parse(Console.ReadLine());
-            Console.WriteLine("ЗНАЧЕНИЕ ИНТЕГРАЛА {0}", Math.Round(SimpsonIntegral(a, b, n), 5));
+            Console.WriteLine($"ЗНАЧЕНИЕ ИНТЕГРАЛА {SimpsonIntegral(a, b, n)}");
             Console.ReadKey();
 
 

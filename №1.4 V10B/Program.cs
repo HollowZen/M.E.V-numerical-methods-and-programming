@@ -33,8 +33,8 @@ namespace _1._4_V10B
             {
                 x = x - F(x) / F1(x);
             }
-            Console.WriteLine("Значение корня функции с точностью {0} равно {1}", e, Math.Round(x, 5));
-            Console.WriteLine("Значение функции F(X) = {0}", F(x), 5);
+            Console.WriteLine($"Значение корня функции с точностью {e} равно {x}");
+            Console.WriteLine($"Значение функции F(X) = {F(x)}");
             Console.ReadKey();
         }
     }

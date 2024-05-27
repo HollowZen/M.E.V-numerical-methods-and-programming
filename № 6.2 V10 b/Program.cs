@@ -13,8 +13,7 @@ namespace __6._2_V10_b
             h = 0.2;                // Шаг сетки "h"
             int t = 5;             // Округление до нужного знака, после запятой
             int n = 10;            // Количество итераций 
-            double F(double a, double b) =>
-                (1 + Math.Pow(Math.E, x)) * (1 + y);  // Заданная функция
+            double F(double a, double b) => (1 + Math.Pow(Math.E, x)) * (1 + y);  // Заданная функция
 
             for (int j = 1; j <= n; j++)
             {

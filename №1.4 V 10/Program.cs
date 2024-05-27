@@ -23,7 +23,7 @@ namespace _1._4_V_10
                 Console.WriteLine("Не удволетворяет первое условие F(a) * F(b) >= 0");
                 return;
             }
-            m = Math.Min(F1(a), F1(b));
+            m = Math.Min(Math.Abs(F1(a)), Math.Abs(F1(b)));
             Console.WriteLine("Параметр m равен {0}", m);
             if (F(a) * F2(a) > 0)
             {
@@ -38,7 +38,8 @@ namespace _1._4_V_10
                 Console.WriteLine(x);
             }
             x = Math.Round(x, 5);
-            Console.WriteLine("Значение корня функции с точностью {0} равно {1}", e, x);
+            Console.WriteLine($"Значение корня функции с точностью {e} равно {x}");
+            Console.WriteLine($"Значение функции F(X) = {F(x)}");
             Console.ReadKey();
         }
     }
